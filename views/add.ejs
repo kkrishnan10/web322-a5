@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add a Memorable Location</title>
+  <link href="/css/main.css" rel="stylesheet">
+</head>
+<body class="bg-base-200">
+
+  
+  <div class="hero min-h-screen">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-4xl font-bold">Add a Memorable Location</h1>
+        <p class="mb-5">Please complete all fields to add your memory.</p>
+
+        
+        <form action="/memories/add" method="POST" class="space-y-4 text-left">
+          <div>
+            <label class="label"><span class="label-text">Name</span></label>
+            <input type="text" name="name" class="input input-bordered w-full" required>
+          </div>
+
+          <div>
+            <label class="label"><span class="label-text">Address</span></label>
+            <input type="text" name="address" class="input input-bordered w-full" required>
+          </div>
+
+          <div>
+            <label class="label"><span class="label-text">Category</span></label>
+            <select name="category" class="select select-bordered w-full" required>
+              <option>Sightseeing</option>
+              <option>Dining</option>
+              <option>Accommodation</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="label"><span class="label-text">Comments</span></label>
+            <textarea name="comments" class="textarea textarea-bordered w-full" required></textarea>
+          </div>
+
+          <div>
+            <label class="label"><span class="label-text">Image URL</span></label>
+            <input type="url" name="image" class="input input-bordered w-full" required>
+          </div>
+
+          <div class="pt-4">
+            <button type="submit" class="btn btn-primary w-full">Add Location</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
